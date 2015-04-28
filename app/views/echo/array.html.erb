@@ -24,7 +24,7 @@
         <label class="checkbox">
 
           <!-- BEGIN CHANGES -->
-          <input type="checkbox" <%= index.even? ? "checked" : nil %> />
+            <input type="checkbox" name = "organization[catagories][]" value = "<%= category %>" <%= index.even? ? "checked" : nil %> />
           <!-- END CHANGES -->
 
           <%= category %>

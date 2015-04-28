@@ -20,7 +20,7 @@
       <% %w(Automotive Technology Education Science Finance Pharmaceutical).each_with_index do |category, index| %>
         <label class="checkbox">
           <!-- BEGIN CHANGES -->
-          <input type="checkbox" <%= index.even? ? "checked" : nil %> />
+          <input type="checkbox" value='1' name="organization[categories][<%= category %>]"<%= index.even? ? "checked" : nil %> />
           <!-- END CHANGES -->
           <%= category %>
         </label>
